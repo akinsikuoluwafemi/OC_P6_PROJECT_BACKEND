@@ -27,8 +27,8 @@ const connectToMongo = async () => {
 connectToMongo();
 
 app.use(express.json());
-app.use(helmet());
-app.use(morgan("common"));
+// app.use(helmet());
+// app.use(morgan("common"));
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
